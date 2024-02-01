@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task2.css"></link>
+</head>
+<body>
+ <div class="header">
+    <span class="timer">Time left:<spna class="time"></spna></span>
+    <h1 class="title">MCQ</h1>
+    <span class="marks" >MARKS:5</span>
+</div>
+    <div class="main-div">
+        <div class="inner-div1">
+            <form  action="" method="post">
+                <label for="name" class="name">NAME</label><br>
+                <input type="text" class="name" id="name" placeholder="Enter your Name" ><br>
+                <span id="errname"></span><br>
+                <label for="subject" class="subject">Subject</label><br>
+                <select class="subject" id="subject">
+                    <option disabled selected>CHOOSE YOR SUBJECTS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="hmtl">HTML</option>
+                    <option value="css">CSS</option>
+                </select><br>
+                <span id="errsubject"></span><br>
+                <label for="level" class="level">DIFFICULTY-LEVEL</label><br>
+                <select class="level" id="level">
+                    <option disabled selected>SELECT YOUR LEVELS</option>
+                    <option value="beginner">BEGINNER</option>
+                    <option value="intermidate">INTERMEDIATE</option>
+                    <option value="pro">PRO</option>
+                </select><br>
+                <span id="errlevel"></span>
+            </form>
+        </div>
+        <button type="button" class="start" onclick="startquis()">START QUIS</button>
+    </div>
+    <div class="question-div">
+        <form action="" method="post">
+            <label for="question" class="question" id="question"></label><br><br><br>
+            <input type="radio" id="option1" name="options" >
+            <label for="option1" class="option1" id="op1"></label><br>    
+            <input type="radio" id="option2" name="options">
+            <label for="option2" class="option2" id="op2"></label><br> 
+             <input type="radio" id="option3" name="options" >
+            <label for="option3" class="option3" id="op3"></label><br> 
+            <input type="radio" id="option4" name="options" >
+            <label for="option4" class="option4" id="op4"></label><br>
+            <button type="button" class="previous" id="previous"><- PREVIOUS</button>
+            <button type="button" class="next"  id="next">NEXT-></button>
+        </form>
+    </div>
+    <script src="task2.js"></script>
+</body>
+</html>

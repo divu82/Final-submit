@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url(cloudjpg.jpg); 
+    background-size: cover;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+header p{
+    color: rgb(21, 0, 255);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #2ecc71;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+section {
+    background-color: rgba(44, 62, 80, 0.7); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+}
+
+.weather-image {
+    max-width: 200px;
+}
+.cityInput{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    width: 300px;
+    border-radius: 4px;
+    background-color: rgb(218, 222, 223);
+    height: 30px;
+    color: rgb(255, 0, 8);
+}
+.search{
+    margin-left: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 70px;
+    font-size: large;
+    font-weight: 700;
+    background-color:#2ecc71;
+    color: #f2f3f3;
+    cursor:pointer;
+}
+.search:hover {
+    background-color: #39ffe5;
+    color: black;
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 8px;
+}
+.cta-button:hover {
+    background-color: #2980b9;
+
+}
