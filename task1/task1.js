@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         weatherstatus.innerText=  data.weather[0].main;
         windspeed.innerText= `${data.visibility} meters`;
         visibility.innerText=data.visibility;
-        humidity.innerText= data.humidity;
+        humidity.innerText= data.main.humidity;
         sunrise.innerText=timetoist(data.sys.sunrise);
         sunset.innerText=timetoist(data.sys.sunset);
     }
